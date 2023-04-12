@@ -1,28 +1,33 @@
 import "./App.css";
-import { useState, useEffect} from 'react';
-
+import { useState, useEffect } from "react";
 
 function App() {
   let [list, setList] = useState([]);
 
+  function getMovies() {
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '5a2688357emshb550473fd663c16p1177c1jsnd359e5dd96c2',
+		'X-RapidAPI-Host': 'moviesdatabase.p.rapidapi.com'
+	}
+};
 
-  function getFilms(){
-
-    fetch('https://api.themoviedb.org/3/movie/550?api_key=b6ad3a4bb91a1af81fa26314c346bd24')
+fetch('https://moviesdatabase.p.rapidapi.com/titles/utils/genres', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
   }
-
   useEffect(() => {
-    getFilms();
+    getMovies();
   }, []);
 
-  
-
-  return (<header className="App-header">
-<h1>Movie Suggestion Generator</h1>
-  </header>
+  return (
+    <div>
+      <header className="App-header">
+        <h1>Movie Suggestion Generator</h1>
+      </header>
+    </div>
   );
 }
 
