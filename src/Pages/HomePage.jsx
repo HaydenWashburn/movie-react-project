@@ -1,0 +1,1 @@
+// create Home Page with a list of movies/images  rendered

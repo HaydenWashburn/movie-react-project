@@ -32,3 +32,4 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles/utils/genres', options)
 }
 
 export default App;
+

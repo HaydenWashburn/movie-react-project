@@ -1,0 +1,1 @@
+// Create a page that has the trending movies per week populated
