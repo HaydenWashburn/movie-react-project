@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   let [list, setList] = useState([]);
@@ -24,9 +25,7 @@ fetch('https://moviesdatabase.p.rapidapi.com/titles/utils/genres', options)
 
   return (
     <div>
-      <header className="App-header">
-        <h1>Movie Suggestion Generator</h1>
-      </header>
+        <HomePage />
     </div>
   );
 }
