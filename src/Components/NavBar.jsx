@@ -7,7 +7,7 @@ function NavBar() {
             <h6 class="brand-logo center">ReactFlix</h6>
             <ul class="#212121 grey darken-4 left hide-on-med-and-down">
               <li>
-                <a href="home">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="trending">Trending</a>
