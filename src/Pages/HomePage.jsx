@@ -40,7 +40,7 @@ console.log(movieObject)
             return(
               <li className="d-flex">
                 <p>{movie.title}</p>
-                <img src={movie.poster_path} alt="Movie Poster" />
+                {/* <img src={movie.poster_path} alt="Movie Poster" /> */}
                 </li>
                 )
               })}
