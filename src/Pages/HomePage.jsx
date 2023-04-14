@@ -26,11 +26,11 @@ console.log(movieObject)
     <div>
       <header>
         <nav>
-          <div class="#9e9e9e grey nav-wrapper">
-            <a href="#!" class="brand-logo center">
-              Home Of The Movies
-            </a>
-            <ul class="#9e9e9e grey left hide-on-med-and-down">
+          <div class="#1976d2 blue darken-2 nav-wrapper">
+            <h6 class="brand-logo center">
+              ReactFlix
+            </h6>
+            <ul class="#1976d2 blue darken-2 left hide-on-med-and-down">
               <li>
                 <a href="home">Home</a>
               </li>
@@ -46,14 +46,15 @@ console.log(movieObject)
       </header>
       <div>
         <body>
+          <ul className="movie-container">
           {movieObject.map((movie)=>{
             return(
-              <div className="movie-container">
-              <h6>{movie.title}</h6>
-                {/* <img src={movie.poster_path} alt="Movie poster" /> */}
-              </div>
-            )
-          })}
+              <li className="d-flex">
+                <p>{movie.title}</p>
+                </li>
+                )
+              })}
+              </ul>
         </body>
       </div>
     </div>
