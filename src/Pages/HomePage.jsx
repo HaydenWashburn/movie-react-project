@@ -2,22 +2,25 @@
 import { useState, useEffect } from "react";
 
 function HomePage() {
-  let [movie, setMovie] = useState("");
+  let [movieObject, setMovieObject] = useState([]);
 
   function getMovie() {
 
     fetch(
-      'http://www.omdbapi.com/?t=Harry-Potter&apikey=3757d6e5'
+      'https://api.themoviedb.org/3/discover/movie/?api_key=b6ad3a4bb91a1af81fa26314c346bd24'
     )
       .then((response) => response.json())
-      .then((response) => console.log(response))
-      .then((movie) => setMovie(movie))
+      .then((response) => {
+      // console.log(response.results)
+        setMovieObject(response.results)
+      })   
       .catch((err) => console.error(err));
   }
-
+console.log(movieObject)
   useEffect(() => {
     getMovie();
   }, []);
+
 
   return (
     <div>
@@ -43,7 +46,14 @@ function HomePage() {
       </header>
       <div>
         <body>
-          
+          {movieObject.map((movie)=>{
+            return(
+              <div className="movie-container">
+              <h6>{movie.title}</h6>
+                {/* <img src={movie.poster_path} alt="Movie poster" /> */}
+              </div>
+            )
+          })}
         </body>
       </div>
     </div>
