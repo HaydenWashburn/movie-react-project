@@ -1,6 +1,24 @@
 // create Home Page with a list of movies/images  rendered
+import { useState, useEffect } from "react";
 
 function HomePage() {
+  let [movie, setMovie] = useState("");
+
+  function getMovie() {
+
+    fetch(
+      'http://www.omdbapi.com/?t=Harry-Potter&apikey=3757d6e5'
+    )
+      .then((response) => response.json())
+      .then((response) => console.log(response))
+      .then((movie) => setMovie(movie))
+      .catch((err) => console.error(err));
+  }
+
+  useEffect(() => {
+    getMovie();
+  }, []);
+
   return (
     <div>
       <header>
@@ -25,6 +43,7 @@ function HomePage() {
       </header>
       <div>
         <body>
+          
         </body>
       </div>
     </div>
