@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 function HomePage() {
   let [movieObject, setMovieObject] = useState([]);
 
-  function getMovie() {
 
+// TODO: Figure out how to fetch image configuration API to insert movie posters"
+  function getMovie() {
     fetch(
       'https://api.themoviedb.org/3/discover/movie/?api_key=b6ad3a4bb91a1af81fa26314c346bd24'
     )
@@ -51,6 +52,7 @@ console.log(movieObject)
             return(
               <li className="d-flex">
                 <p>{movie.title}</p>
+                <img src={movie.poster_path} alt="Movie Poster" />
                 </li>
                 )
               })}
