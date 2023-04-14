@@ -16,7 +16,7 @@ function HomePage() {
   
 // }
 fetch(
-'https://api.themoviedb.org/3/discover/movie/?api_key=b6ad3a4bb91a1af81fa26314c346bd24'
+'https://api.themoviedb.org/3/discover/movie?api_key=b6ad3a4bb91a1af81fa26314c346bd24&language=en-US&region=US&include_adult=false&page=1&year=2023'
 )
 .then((response) => response.json())
 .then((response) => {
