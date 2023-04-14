@@ -26,11 +26,11 @@ console.log(movieObject)
     <div>
       <header>
         <nav>
-          <div class="#1976d2 blue darken-2 nav-wrapper">
+          <div class="#212121 grey darken-4 nav-wrapper">
             <h6 class="brand-logo center">
               ReactFlix
             </h6>
-            <ul class="#1976d2 blue darken-2 left hide-on-med-and-down">
+            <ul class="#212121 grey darken-4 left hide-on-med-and-down">
               <li>
                 <a href="home">Home</a>
               </li>
