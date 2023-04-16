@@ -24,7 +24,7 @@ function GetTrending() {
       <ul className="movie-container">
         {trendingMovies.map((movie) => {
           return (
-            <div>
+            <div className="movie-content">
             <img className="placeholder-image" src="https://media.istockphoto.com/id/1022028010/vector/image-unavailable-icon.jpg?s=2048x2048&w=is&k=20&c=2LxVQ9bsyOAe6s_zhNE9dqn5FSHltb28oNXmPAq-UVU=" alt="Placeholder Photo" />
           <li>
             <p>{movie.title}</p>
