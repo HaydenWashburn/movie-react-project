@@ -17,4 +17,10 @@
 .d-flex {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.placeholder-image{
+  width:20vh;
+  height: 20vh;
 }

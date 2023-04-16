@@ -38,10 +38,13 @@ console.log(movieObject)
           <ul className="movie-container">
           {movieObject.map((movie)=>{
             return(
-              <li className="d-flex">
+              <div>
+                <img className="placeholder-image" src="https://media.istockphoto.com/id/1022028010/vector/image-unavailable-icon.jpg?s=2048x2048&w=is&k=20&c=2LxVQ9bsyOAe6s_zhNE9dqn5FSHltb28oNXmPAq-UVU=" alt="Placeholder Photo" />
+              <li>
                 <p>{movie.title}</p>
                 {/* <img src={movie.poster_path} alt="Movie Poster" /> */}
                 </li>
+              </div>
                 )
               })}
               </ul>
