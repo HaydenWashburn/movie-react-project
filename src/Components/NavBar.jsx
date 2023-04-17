@@ -3,9 +3,9 @@ function NavBar() {
     <div>
       <header>
         <nav>
-          <div class="#212121 grey darken-4 nav-wrapper">
+          <div class="#f44336 red nav-wrapper">
             <h6 class="brand-logo center">ReactFlix</h6>
-            <ul class="#212121 grey darken-4 left hide-on-med-and-down">
+            <ul class="#f44336 red left hide-on-med-and-down">
               <li>
                 <a href="/">Home</a>
               </li>

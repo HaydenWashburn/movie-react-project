@@ -16,6 +16,7 @@
 .movie-content{
   margin:auto;
   padding: 10vh;
+  text-align: center;
 }
 
 .d-flex {
@@ -24,13 +25,13 @@
   align-items: center;
 }
 
-.placeholder-image{
-  width:20vh;
-  height: 20vh;
+.movie-image{
+  width:42vh;
+  height: 60vh;
   border-radius: 20px;
 }
 
-p{
+.movie-title{
   text-align: center;
   width: 20vh;
 }

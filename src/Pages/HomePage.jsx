@@ -39,10 +39,9 @@ console.log(movieObject)
           {movieObject.map((movie)=>{
             return(
               <div className="movie-content">
-                <img className="placeholder-image" src="https://media.istockphoto.com/id/1022028010/vector/image-unavailable-icon.jpg?s=2048x2048&w=is&k=20&c=2LxVQ9bsyOAe6s_zhNE9dqn5FSHltb28oNXmPAq-UVU=" alt="Placeholder Photo" />
+                <img className="movie-image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Movie Poster" />
               <li>
-                <p>{movie.title}</p>
-                {/* <img src={movie.poster_path} alt="Movie Poster" /> */}
+                <h5>{movie.title}</h5>
                 </li>
               </div>
                 )

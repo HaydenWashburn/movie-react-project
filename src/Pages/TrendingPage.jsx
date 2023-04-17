@@ -6,7 +6,7 @@ function GetTrending() {
 
   function fetchTrending() {
     fetch(
-      "https://api.themoviedb.org/3/trending/movie/week?api_key=b6ad3a4bb91a1af81fa26314c346bd24"
+      "https://api.themoviedb.org/3/trending/movie/day?api_key=b6ad3a4bb91a1af81fa26314c346bd24"
     )
       .then((response) => response.json())
       .then((response) => {
@@ -25,10 +25,9 @@ function GetTrending() {
         {trendingMovies.map((movie) => {
           return (
             <div className="movie-content">
-            <img className="placeholder-image" src="https://media.istockphoto.com/id/1022028010/vector/image-unavailable-icon.jpg?s=2048x2048&w=is&k=20&c=2LxVQ9bsyOAe6s_zhNE9dqn5FSHltb28oNXmPAq-UVU=" alt="Placeholder Photo" />
+                <img className="movie-image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Movie Poster" />
           <li>
-            <p>{movie.title}</p>
-            {/* <img src={movie.poster_path} alt="Movie Poster" /> */}
+            <h5>{movie.title}</h5>
             </li>
           </div>
           );
