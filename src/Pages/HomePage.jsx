@@ -4,27 +4,45 @@ import { Link } from "react-router-dom";
 
 function HomePage() {
   let [movieObject, setMovieObject] = useState([]);
+  let [page, setPage] = useState(1);
 
-  function getMovie() {
-    fetch(
-      "https://api.themoviedb.org/3/discover/movie?api_key=b6ad3a4bb91a1af81fa26314c346bd24&language=en-US&region=US&include_adult=false&page=1&year=2023"
-    )
-      .then((response) => response.json())
-      .then((data) => {
+  function getMovies(pages = 1, startingPage = 1) {
+    let fetches = new Array(pages).fill(null).map((_, idx) => {
+      return fetch(
+        `https://api.themoviedb.org/3/discover/movie?api_key=b6ad3a4bb91a1af81fa26314c346bd24&language=en-US&region=US&include_adult=false&page=${
+          idx + startingPage
+        }&year=2023`
+      );
+    });
+
+    Promise.all(fetches)
+      .then((results) =>
+        Promise.all(results.map((response) => response.json()))
+      )
+      .then((allResults) => {
         // console.log(data.results)
-        setMovieObject(data.results);
+        setMovieObject(
+          allResults.reduce((acc, data) => acc.concat(data.results), [])
+        );
       })
       .catch((err) => console.error(err));
   }
 
   console.log(movieObject);
   useEffect(() => {
-    getMovie();
-  }, []);
+    getMovies(1, page);
+  }, [page]);
 
   return (
     <div>
       <body>
+        <button
+          onClick={() => {
+            setPage(page + 1);
+          }}
+        >
+          {page} Next
+        </button>
         <ul className="movie-container">
           {movieObject.map((movie) => {
             return (
