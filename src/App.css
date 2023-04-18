@@ -17,7 +17,7 @@
 .singleFilm-container{
   background-color: rgb(15, 22, 43);
   color:white;
-
+font-size: 18px;
 }
 
 .movie-content{
@@ -41,5 +41,11 @@
 .movie-title{
   text-align: center;
   width: 20vh;
+}
+
+.overview-container{
+  margin:auto;
+  padding:15px;
+  width:90vh;
 }
 

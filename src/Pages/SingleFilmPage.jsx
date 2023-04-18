@@ -30,8 +30,8 @@ function SingleFilmPage() {
         alt="Movie"
       />
       <h5>{item.title}</h5>
-      <p>{item.overview}</p>
-      <p>{item.release_date}</p>
+      <p className="overview-container">{item.overview}</p>
+      <p>Release Date: {item.release_date}</p>
     </div>
     </div>
   );
