@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+.navBar{
+  font-family: 'Chivo Mono', monospace;
+}
+
 .movie-container {
   display: grid;
   flex-wrap:wrap;
@@ -24,6 +28,7 @@ font-size: 18px;
   margin:auto;
   padding: 10vh;
   text-align: center;
+  font-family: 'Chivo Mono', monospace;
 }
 
 .d-flex {
@@ -48,4 +53,3 @@ font-size: 18px;
   padding:15px;
   width:90vh;
 }
-

@@ -7,7 +7,7 @@ function GetTrending() {
 
   function fetchTrending() {
     fetch(
-      "https://api.themoviedb.org/3/trending/movie/day?api_key=b6ad3a4bb91a1af81fa26314c346bd24"
+      "https://api.themoviedb.org/3/trending/movie/week?api_key=b6ad3a4bb91a1af81fa26314c346bd24"
     )
       .then((response) => response.json())
       .then((data) => {

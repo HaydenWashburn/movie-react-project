@@ -11,7 +11,6 @@ function SingleFilmPage() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log("results are" + data);
         setItem(data);
       })
       .catch((err) => console.error(err));
