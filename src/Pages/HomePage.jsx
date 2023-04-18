@@ -1,5 +1,6 @@
 // create Home Page with a list of movies/images  rendered
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 function HomePage() {
   let [movieObject, setMovieObject] = useState([]);
@@ -39,7 +40,7 @@ console.log(movieObject)
           {movieObject.map((movie)=>{
             return(
               <div className="movie-content">
-                <img className="movie-image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Movie Poster" />
+               <Link to={`/movie/${movie.id}`}><img className="movie-image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Movie Poster" /></Link>
               <li>
                 <h5>{movie.title}</h5>
                 </li>
