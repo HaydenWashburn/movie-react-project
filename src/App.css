@@ -14,6 +14,12 @@
   color:white;
 }
 
+.singleFilm-container{
+  background-color: rgb(15, 22, 43);
+  color:white;
+
+}
+
 .movie-content{
   margin:auto;
   padding: 10vh;
