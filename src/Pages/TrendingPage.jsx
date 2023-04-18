@@ -1,5 +1,6 @@
 // Create a page that has the trending movies per week populated
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function GetTrending() {
   let [trendingMovies, setTrendingMovies] = useState([]);
@@ -25,7 +26,7 @@ function GetTrending() {
         {trendingMovies.map((movie) => {
           return (
             <div className="movie-content">
-                <img className="movie-image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Movie Poster" />
+            <Link to={`/movie/${movie.id}`}><img className="movie-image" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="Movie Poster" /></Link> 
           <li>
             <h5>{movie.title}</h5>
             </li>
