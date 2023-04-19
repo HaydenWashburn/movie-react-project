@@ -34,7 +34,7 @@ function HomePage() {
   }, [page]);
 
   return (
-    <div className="movie-container">
+    <div>
         <button className="movie-container"
           onClick={() => {
             setPage(page + 1);
@@ -42,24 +42,23 @@ function HomePage() {
         >
           {page} Next
         </button>
-        <ul className="movie-container">
+        <div className="row">
           {movieObject.map((movie) => {
             return (
-              <div className="movie-content">
-                  <li>
+              <div>
+                  <div className="col l4 m6 s12">
                 <Link to={`/movie/${movie.id}`}>
-                  <img
-                    className="movie-image"
+                  <img class="responsive-img"
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                     alt="Movie Poster"
                   />
                 </Link>
                   <h5>{movie.title}</h5>
-                </li>
+                </div>
               </div>
             );
           })}
-        </ul>
+        </div>
     </div>
   );
 }
