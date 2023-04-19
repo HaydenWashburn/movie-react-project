@@ -35,13 +35,13 @@ function HomePage() {
 
   return (
       <div className="movie-container row">
-         <ul class="pagination">
+         {/* <ul class="pagination">
          <li class="waves-effect"><a href="#!"><i   
           onClick={() => {
             setPage(page + 1);
           }}
         class="material-icons">arrow_forward</i></a></li>
-         </ul>
+         </ul> */}
         {movieObject.map((movie) => {
           return (
             <div>
@@ -51,7 +51,7 @@ function HomePage() {
               >
                 <Link to={`/movie/${movie.id}`}>
                   <img
-                    class="movie-image section"
+                    class="movie-image section hoverable"
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                     alt="Movie Poster"
                   />
