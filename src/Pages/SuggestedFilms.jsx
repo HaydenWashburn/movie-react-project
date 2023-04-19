@@ -41,7 +41,7 @@ let suggestedList = selectRandomRangeFromList(randomMovie, 9)
         {suggestedList.map((movie) => {
           return(
               <div>
-                   <div className="movie-content col l4 m6 s12" 
+                   <div className="movie-content col s12 m6 l4" 
                 // style={{paddingRight:"5px", paddingLeft:"5px"}} (attempting to get rid of gap when screen size is 704-785px)
                 >
               <Link to={`/movie/${movie.id}`}>

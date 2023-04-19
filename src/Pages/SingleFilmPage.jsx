@@ -22,7 +22,7 @@ function SingleFilmPage() {
 
   return (
     <div className="singleFilm-container row">
-    <div className="movie-content l1 m1 s1">
+    <div className="movie-content">
       <img
         className="movie-image section"
         src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}

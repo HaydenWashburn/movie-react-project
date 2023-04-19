@@ -35,11 +35,18 @@ function HomePage() {
 
   return (
       <div className="movie-container row">
+         <ul class="pagination">
+         <li class="waves-effect"><a href="#!"><i   
+          onClick={() => {
+            setPage(page + 1);
+          }}
+        class="material-icons">arrow_forward</i></a></li>
+         </ul>
         {movieObject.map((movie) => {
           return (
             <div>
               <div
-                className="movie-content col l4 m6 s12"
+                className="movie-content col s12 m6 l4"
                 // style={{paddingRight:"5px", paddingLeft:"5px"}} (attempting to get rid of gap when screen size is 704-785px)
               >
                 <Link to={`/movie/${movie.id}`}>
