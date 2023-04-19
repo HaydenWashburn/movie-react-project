@@ -21,15 +21,15 @@ function SingleFilmPage() {
   });
 
   return (
-    <div className="singleFilm-container">
-    <div className="movie-content">
+    <div className="singleFilm-container row">
+    <div className="movie-content l1 m1 s1">
       <img
-        className="movie-image"
+        className="movie-image section"
         src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
         alt="Movie"
       />
       <h5>{item.title}</h5>
-      <p className="overview-container">{item.overview}</p>
+      <p className="overview-container section">{item.overview}</p>
       <p>Release Date: {item.release_date}</p>
     </div>
     </div>

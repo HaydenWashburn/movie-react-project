@@ -30,14 +30,13 @@ function SuggestedFilms() {
   }
 
   useEffect(() => {
-    getRandomMovies(5, 1);
+    getRandomMovies(10, 1);
   }, [page]);
   
 
 let suggestedList = selectRandomRangeFromList(randomMovie, 9)
 
     return (
-      <div>
           <div className="movie-container row">
         {suggestedList.map((movie) => {
           return(
@@ -58,7 +57,6 @@ let suggestedList = selectRandomRangeFromList(randomMovie, 9)
           )
         })}
   </div>
-      </div>
     );
 }
 

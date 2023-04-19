@@ -21,7 +21,6 @@ function GetTrending() {
   }, []);
 
   return (
-    <div>
       <div className="movie-container row">
         {trendingMovies.map((movie) => {
           return (
@@ -42,7 +41,6 @@ function GetTrending() {
           );
         })}
       </div>
-    </div>
   );
 }
 

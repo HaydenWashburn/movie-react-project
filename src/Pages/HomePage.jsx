@@ -34,34 +34,27 @@ function HomePage() {
   }, [page]);
 
   return (
-    <div>
-        {/* <button className="movie-container"
-          onClick={() => {
-            setPage(page + 1);
-          }}
-        >
-          {page} Next
-        </button> */}
-        <div className="movie-container row">
-          {movieObject.map((movie) => {
-            return (
-              <div>
-                <div className="movie-content col l4 m6 s12" 
+      <div className="movie-container row">
+        {movieObject.map((movie) => {
+          return (
+            <div>
+              <div
+                className="movie-content col l4 m6 s12"
                 // style={{paddingRight:"5px", paddingLeft:"5px"}} (attempting to get rid of gap when screen size is 704-785px)
-                >
+              >
                 <Link to={`/movie/${movie.id}`}>
-                  <img class="movie-image section responsive-img"
+                  <img
+                    class="movie-image section"
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                     alt="Movie Poster"
                   />
                 </Link>
-                  <h5>{movie.title}</h5>
-                </div>
+                <h5>{movie.title}</h5>
               </div>
-            );
-          })}
-        </div>
-    </div>
+            </div>
+          );
+        })}
+      </div>
   );
 }
 
