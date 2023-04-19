@@ -35,20 +35,22 @@ function HomePage() {
 
   return (
     <div>
-        <button className="movie-container"
+        {/* <button className="movie-container"
           onClick={() => {
             setPage(page + 1);
           }}
         >
           {page} Next
-        </button>
-        <div className="row">
+        </button> */}
+        <div className="movie-container row">
           {movieObject.map((movie) => {
             return (
               <div>
-                  <div className="col l4 m6 s12">
+                <div className="movie-content col l4 m6 s12" 
+                // style={{paddingRight:"5px", paddingLeft:"5px"}} (attempting to get rid of gap when screen size is 704-785px)
+                >
                 <Link to={`/movie/${movie.id}`}>
-                  <img class="responsive-img"
+                  <img class="movie-image section responsive-img"
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                     alt="Movie Poster"
                   />

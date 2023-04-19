@@ -3,12 +3,12 @@
 }
 
 .movie-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr, 1fr, 1fr;
   margin: auto;
   width: 100%;
-  height: 100%;
+  height: 100%; */
   background-color: rgb(15, 22, 43);
   color:white;
 }
@@ -20,11 +20,11 @@ font-size: 18px;
 }
 
 .movie-content{
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   margin:auto;
-  padding:15px;
+  padding:15px; */
   text-align: center;
   font-family: 'Chivo Mono', monospace;
 }
@@ -37,6 +37,7 @@ font-size: 18px;
 
 .movie-image{
   width:42vh;
+  max-width: 80%;
   height: 60vh;
   border-radius: 20px;
 }
