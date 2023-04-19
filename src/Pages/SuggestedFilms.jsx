@@ -34,7 +34,7 @@ function SuggestedFilms() {
   }, [page]);
   
 
-let suggestedList = selectRandomRangeFromList(randomMovie, 12)
+let suggestedList = selectRandomRangeFromList(randomMovie, 9)
 
     return (
       <div>
@@ -42,6 +42,7 @@ let suggestedList = selectRandomRangeFromList(randomMovie, 12)
         {suggestedList.map((movie) => {
           return(
               <div className="movie-content">
+                <li>
               <Link to={`/movie/${movie.id}`}>
                 <img
                   className="movie-image"
@@ -49,7 +50,6 @@ let suggestedList = selectRandomRangeFromList(randomMovie, 12)
                   alt="Movie Poster"
                 />
               </Link>
-              <li>
                 <h5>{movie.title}</h5>
               </li>
             </div>

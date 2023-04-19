@@ -34,9 +34,8 @@ function HomePage() {
   }, [page]);
 
   return (
-    <div>
-      <body>
-        <button
+    <div className="movie-container">
+        <button className="movie-container"
           onClick={() => {
             setPage(page + 1);
           }}
@@ -47,6 +46,7 @@ function HomePage() {
           {movieObject.map((movie) => {
             return (
               <div className="movie-content">
+                  <li>
                 <Link to={`/movie/${movie.id}`}>
                   <img
                     className="movie-image"
@@ -54,14 +54,12 @@ function HomePage() {
                     alt="Movie Poster"
                   />
                 </Link>
-                <li>
                   <h5>{movie.title}</h5>
                 </li>
               </div>
             );
           })}
         </ul>
-      </body>
     </div>
   );
 }

@@ -25,8 +25,11 @@ font-size: 18px;
 }
 
 .movie-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin:auto;
-  padding: 10vh;
+  padding:15px;
   text-align: center;
   font-family: 'Chivo Mono', monospace;
 }
@@ -53,3 +56,8 @@ font-size: 18px;
   padding:15px;
   width:90vh;
 }
+
+/* @media only screen and (min-width: 992px){body{
+  width:100%;
+}
+} */

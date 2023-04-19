@@ -26,6 +26,7 @@ function GetTrending() {
         {trendingMovies.map((movie) => {
           return (
             <div className="movie-content">
+                <li>
               <Link to={`/movie/${movie.id}`}>
                 <img
                   className="movie-image"
@@ -33,7 +34,6 @@ function GetTrending() {
                   alt="Movie Poster"
                 />
               </Link>
-              <li>
                 <h5>{movie.title}</h5>
               </li>
             </div>
