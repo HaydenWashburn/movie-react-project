@@ -9,14 +9,20 @@
   margin: auto;
   width: 100%;
   height: 100%; */
+  margin:0;
+  padding:2rem;
   background-color: rgb(15, 22, 43);
   color:white;
+  flex:1;
 }
 
 .singleFilm-container{
   background-color: rgb(15, 22, 43);
   color:white;
 font-size: 18px;
+margin:0;
+padding:2rem;
+flex:1;
 }
 
 .movie-content{
@@ -40,6 +46,14 @@ font-size: 18px;
   text-align: center;
   width: 20vh;
 }
+
+.layout{
+  min-height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 
 
 /* @media only screen and (min-width: 992px){body{

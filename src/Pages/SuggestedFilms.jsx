@@ -34,7 +34,8 @@ function SuggestedFilms() {
   }, [page]);
   
 
-let suggestedList = selectRandomRangeFromList(randomMovie, 9)
+let suggestedList = selectRandomRangeFromList(randomMovie, 12)
+console.log(suggestedList.length);
 
     return (
           <div className="movie-container row">
