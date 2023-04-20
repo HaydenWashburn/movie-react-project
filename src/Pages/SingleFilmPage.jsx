@@ -30,6 +30,7 @@ function SingleFilmPage() {
       />
       <h5>{item.title}</h5>
       <p className="overview-container section">{item.overview}</p>
+      <p>{item.cast}</p>
       <p>Release Date: {item.release_date}</p>
     </div>
     </div>

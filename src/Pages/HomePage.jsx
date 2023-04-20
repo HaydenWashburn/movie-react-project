@@ -34,7 +34,7 @@ function HomePage() {
   }, [page]);
 
   return (
-      <div className="movie-container row">
+      <div className="movie-container">
          {/* <ul class="pagination">
          <li class="waves-effect"><a href="#!"><i   
           onClick={() => {
@@ -46,12 +46,12 @@ function HomePage() {
           return (
             <div>
               <div
-                className="movie-content col s12 m6 l4"
+                className="movie-content col s12 m6 l3"
                 // style={{paddingRight:"5px", paddingLeft:"5px"}} (attempting to get rid of gap when screen size is 704-785px)
               >
                 <Link to={`/movie/${movie.id}`}>
                   <img
-                    class="movie-image section hoverable"
+                    class="movie-image section responsive-img"
                     src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                     alt="Movie Poster"
                   />

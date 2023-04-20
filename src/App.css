@@ -1,62 +1,62 @@
-.navBar{
-  font-family: 'Chivo Mono', monospace;
+.navBar {
+  font-family: "Chivo Mono", monospace;
 }
 
 .movie-container {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr, 1fr, 1fr;
-  margin: auto;
-  width: 100%;
-  height: 100%; */
-  margin:0;
-  padding:2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr, 3fr, 3fr;
+  margin: 0;
+  padding: 1rem;
   background-color: rgb(15, 22, 43);
-  color:white;
-  flex:1;
+  color: white;
+  flex: 1;
 }
 
-.singleFilm-container{
+.singleFilm-container {
   background-color: rgb(15, 22, 43);
-  color:white;
-font-size: 18px;
-margin:0;
-padding:2rem;
-flex:1;
+  color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 1rem;
+  flex: 1;
 }
 
-.movie-content{
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:auto;
-  padding:15px; */
+.movie-content {
+  padding: 15px;
   text-align: center;
-  font-family: 'Chivo Mono', monospace;
+  font-family: "Chivo Mono", monospace;
 }
 
-.movie-image{
-  width:42vh;
+.movie-image {
+  width: 42vh;
   max-width: 80%;
   height: 60vh;
   border-radius: 20px;
+  flex: 1;
 }
 
-.movie-title{
+.movie-title {
   text-align: center;
   width: 20vh;
 }
 
-.layout{
-  min-height:100vh;
+.layout {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
 
-
-
-/* @media only screen and (min-width: 992px){body{
-  width:100%;
+@media only screen and (max-width: 992px) {
+  .movie-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
 }
-} */
+
+@media only screen and (max-width: 420px) {
+  .movie-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
