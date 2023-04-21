@@ -48,6 +48,24 @@
   align-items: stretch;
 }
 
+.login-card{
+  margin:auto;
+  width:60vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  font-family: "Chivo Mono", monospace;
+}
+
+.login-button{
+  width:10vh;
+  height: 10vh;
+  font-family: "Chivo Mono", monospace;
+}
+
 @media only screen and (max-width: 992px) {
   .movie-container {
     grid-template-columns: repeat(2, 1fr);
