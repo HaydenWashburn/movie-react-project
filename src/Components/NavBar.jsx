@@ -1,4 +1,3 @@
-import LoginButton from "./login";
 
 function NavBar() {
   return (
@@ -16,12 +15,6 @@ function NavBar() {
               </li>
               <li>
                 <a href="/suggested">Suggested</a>
-              </li>
-              <li>
-                <a href="/login">Login</a>
-              </li>
-              <li>
-                <a href="/logout">Logout</a>
               </li>
               <li>
                 <a href="/profile">Profile</a>

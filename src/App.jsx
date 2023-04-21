@@ -4,10 +4,8 @@ import HomePage from "./Pages/HomePage";
 import GetTrending from './Pages/TrendingPage';
 import SuggestedFilms from "./Pages/SuggestedFilms";
 import SingleFilmPage from "./Pages/SingleFilmPage";
-import LoginButton from "./Pages/LoginPage";
 import NavBar from "./Components/NavBar";
-import Profile from "./Pages/ProfilePage";
-import LogoutButton from "./Pages/LogoutPage";
+import ProfilePage from "./Pages/ProfilePage";
 function App() {
   return (
     <div className="layout">
@@ -20,9 +18,7 @@ function App() {
       <Route path = "/trending" element = {<GetTrending />} />
       <Route path = "/suggested" element = {<SuggestedFilms />} />
       <Route path = "/movie/:id" element = {<SingleFilmPage /> } />
-      <Route path = "/login" element = {<LoginButton /> } />
-      <Route path = "/logout" element = {<LogoutButton /> } />
-      <Route path="/profile" element = {<Profile /> } />
+      <Route path = "/profile" element = {<ProfilePage /> } />
     </Routes>
     </BrowserRouter>
     </div>
