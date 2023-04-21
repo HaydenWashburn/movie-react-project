@@ -6,10 +6,14 @@ import LoginButton from "../Components/login";
 
 function ProfilePage(){
     return(
-        <div className="login-card">
+        <div className="profile-container">
+        <div>
             <Profile />
+            <div className="buttons">
             <LoginButton />
             <LogoutButton />
+            </div>
+        </div>
         </div>
     )
 } 

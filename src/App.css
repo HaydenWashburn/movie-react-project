@@ -2,6 +2,19 @@
   font-family: "Chivo Mono", monospace;
 }
 
+.profile-container{
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+}
+
+.profile-content{
+  color:white;
+  font-family: "Chivo Mono", monospace;
+  text-align: center;
+}
+
 .movie-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -48,22 +61,16 @@
   align-items: stretch;
 }
 
-.login-card{
-  margin:auto;
-  width:60vh;
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  text-align: center;
-  font-family: "Chivo Mono", monospace;
-}
 
 .login-button{
   width:10vh;
   height: 5vh;
   font-family: "Chivo Mono", monospace;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 992px) {
