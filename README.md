@@ -1,12 +1,10 @@
 
 <!-- Description of App -->
--This website will have very simple functionality. The user will be able to see a rendered list of movies with the ability to search for specific movies. 
+-This App has a very simple purpose which is to provide a list of movies for the user. The user will be able to scroll through a general list of all movies, a list of Trending movies, and a list of suggested movies that is randomly generated each time the page is refreshed. The user can also create their own profile and save movies to a favorites/must watch list.
 
---When a movie is selected the user will see the poster for the film as well as a description of the film. 
+<!-- Screenshot of App -->
+- C:\Users\hayde\Downloads\Untitled_ Apr 21, 2023 2_39 PM.gif
 
----Users will be able to create an account to add favorites as well as a watch list for future reference.
-
-<!-- Desription of App -->
 
 <!-- Challenges I faced working on this App -->
 
@@ -23,9 +21,5 @@ redone. I switched all styling to Materialize.css but for some reason it kept gi
 I kept it simple and used basic display:grid to set up columns and rows and then used media queries to make the webpage responsive when viewed on smaller screens.
 
 
-<!-- Final Touches to complete App for submission -->
 
--Currently working on finishing up the login section of the app so the user can create an account.
-
---Still need to add Pagination to the home page so the user can filter through multiple pages of the movie list
 

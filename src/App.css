@@ -71,6 +71,18 @@
 .buttons{
   display: flex;
   justify-content: center;
+  font-family:"Chivo Mono", monospace ;
+  background-color:white;
+  border-radius: 8px;
+}
+
+.page-button-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:auto;
+  padding:10px;
+
 }
 
 @media only screen and (max-width: 992px) {
