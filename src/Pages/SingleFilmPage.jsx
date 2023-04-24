@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import useSavedMovies from "../utils/LocalStorageFunction";
 
 function SingleFilmPage() {
   let [item, setItem] = useState({});
