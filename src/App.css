@@ -7,6 +7,7 @@
  justify-content: center;
  align-items: center;
  margin: auto;
+ padding:175px;
 }
 
 .profile-content{
@@ -67,8 +68,9 @@
 
 
 .login-button{
-  width:10vh;
-  height: 5vh;
+  padding: 25px;
+  background-color:white;
+  border-radius: 8px;
   font-family: "Chivo Mono", monospace;
 }
 
@@ -87,6 +89,11 @@
   margin:auto;
   padding:10px;
 
+}
+
+.refresh-button{
+  margin:auto;
+  
 }
 
 @media only screen and (max-width: 992px) {

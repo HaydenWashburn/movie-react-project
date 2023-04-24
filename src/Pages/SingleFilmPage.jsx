@@ -5,6 +5,7 @@ function SingleFilmPage() {
   let [item, setItem] = useState({});
   let { id } = useParams();
 
+
   function getMovie() {
     fetch(
       `https://api.themoviedb.org/3/movie/${id}?api_key=b6ad3a4bb91a1af81fa26314c346bd24`
@@ -15,6 +16,7 @@ function SingleFilmPage() {
       })
       .catch((err) => console.error(err));
   }
+
 
   useEffect(() => {
     getMovie();
@@ -31,6 +33,7 @@ function SingleFilmPage() {
       <h5>{item.title}</h5>
       <p className="overview-container section">{item.overview}</p>
       <p>Release Date: {item.release_date}</p>
+      <button className="buttons">Save To Favorites</button>
     </div>
     </div>
   );
