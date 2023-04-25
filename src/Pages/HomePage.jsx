@@ -35,16 +35,27 @@ function HomePage() {
 
   return (
     <div>
-        <div className="page-button-container">
-            <button className="buttons"
-     onClick={() => {
-       setPage(page - 1);
-     }}>Previous Page</button>
-              <button className="buttons"
+      <div className="page-button-container">
+        <a
+          class="waves-effect waves-light btn"
+          onClick={() => {
+            if (page === 1) {
+            } else {
+              setPage(page - 1);
+            }
+          }}
+        >
+          Previous
+        </a>
+        <a
+          class="waves-effect waves-light btn"
           onClick={() => {
             setPage(page + 1);
-          }}>Next Page</button>
-        </div>
+          }}
+        >
+          Next
+        </a>
+      </div>
       <div className="movie-container">
         {movieObject.map((movie) => {
           return (
@@ -66,7 +77,7 @@ function HomePage() {
           );
         })}
       </div>
-      </div>
+    </div>
   );
 }
 

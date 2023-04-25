@@ -36,38 +36,40 @@ function SuggestedFilms() {
   useEffect(() => {
     getRandomMovies(10, 1);
   }, [page]);
-  
 
-let suggestedList = selectRandomRangeFromList(randomMovie, 12)
-console.log(suggestedList.length);
+  let suggestedList = selectRandomRangeFromList(randomMovie, 12);
+  console.log(suggestedList.length);
 
-    return (
-<div>
-        <div className="page-button-container">
-            <button className="buttons" onClick={refreshPage}>Refresh Page</button>
-        </div>
+  return (
+    <div>
+      <div className="page-button-container">
+        <a class="waves-effect waves-light btn" onClick={refreshPage}>
+          Refresh
+        </a>
+      </div>
       <div className="movie-container">
         {suggestedList.map((movie) => {
-          return(
+          return (
             <div>
-                   <div className="movie-content" 
+              <div
+                className="movie-content"
                 // style={{paddingRight:"5px", paddingLeft:"5px"}} (attempting to get rid of gap when screen size is 704-785px)
-                >
-              <Link to={`/movie/${movie.id}`}>
-                <img
-                  class="movie-image  responsive-img"
-                  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                  alt="Movie Poster"
+              >
+                <Link to={`/movie/${movie.id}`}>
+                  <img
+                    class="movie-image  responsive-img"
+                    src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                    alt="Movie Poster"
                   />
-              </Link>
+                </Link>
                 <h5>{movie.title}</h5>
               </div>
             </div>
-          )
+          );
         })}
-  </div>
-  </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default SuggestedFilms;
