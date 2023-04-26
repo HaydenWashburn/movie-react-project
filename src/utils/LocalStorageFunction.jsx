@@ -6,7 +6,7 @@ function useSavedMovies() {
     function addMovie(movie) {
       let updatedMovies = [...movieList, movie];
       setMovieList(updatedMovies);
-      localStorage.setItem("savedMovies", updatedMovies);
+      localStorage.setItem("savedMovies", JSON.stringify(updatedMovies));
     }
   
     function removeMovie(id) {
@@ -14,11 +14,11 @@ function useSavedMovies() {
       let movieIdxToDelete = updatedMovies.find((movie) => movie.id == id)
       updatedMovies.splice(movieIdxToDelete, 1);
       setMovieList(updatedMovies);
-      localStorage.setItem("savedMovies", updatedMovies);
+      localStorage.setItem("savedMovies", JSON.stringify(updatedMovies));
     }
   
     useEffect(() => {
-      setMovieList(localStorage.getItem("savedMovies") || [])
+      setMovieList(JSON.parse(localStorage.getItem("savedMovies")) || [])
     }, []);
   
     return { movieList, addMovie, removeMovie };

@@ -40,6 +40,11 @@
   padding: 15px;
   text-align: center;
   font-family: "Chivo Mono", monospace;
+  transition: transform 0.5s;
+}
+
+.movie-container .movie-content:hover{
+  transform: scale(1.1);
 }
 
 .movie-image {
@@ -48,11 +53,9 @@
   height: 60vh;
   border-radius: 60px;
   flex: 1;
+  transition: transform 0.5s;
 }
 
-.movie-image:hover{
-  transform:scale(1.1);
-}
 
 .movie-title {
   text-align: center;

@@ -51,10 +51,7 @@ function SuggestedFilms() {
         {suggestedList.map((movie) => {
           return (
             <div>
-              <div
-                className="movie-content"
-                // style={{paddingRight:"5px", paddingLeft:"5px"}} (attempting to get rid of gap when screen size is 704-785px)
-              >
+              <div className="movie-content">
                 <Link to={`/movie/${movie.id}`}>
                   <img
                     class="movie-image  responsive-img"
