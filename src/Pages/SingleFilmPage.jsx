@@ -34,7 +34,9 @@ function SingleFilmPage() {
       <h5>{item.title}</h5>
       <p className="overview-container section">{item.overview}</p>
       <p>Release Date: {item.release_date}</p>
-      <button className="buttons">Save To Favorites</button>
+      <a class="waves-effect waves-light btn red">
+          Save To Favorites
+        </a>
     </div>
     </div>
   );

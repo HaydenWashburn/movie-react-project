@@ -37,7 +37,7 @@ function HomePage() {
     <div>
       <div className="page-button-container">
         <a
-          class="waves-effect waves-light btn"
+          class="waves-effect waves-light btn red"
           onClick={() => {
             if (page === 1) {
             } else {
@@ -48,7 +48,7 @@ function HomePage() {
           Previous
         </a>
         <a
-          class="waves-effect waves-light btn"
+          class="waves-effect waves-light btn red"
           onClick={() => {
             setPage(page + 1);
           }}

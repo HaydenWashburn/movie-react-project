@@ -43,7 +43,7 @@ function SuggestedFilms() {
   return (
     <div>
       <div className="page-button-container">
-        <a class="waves-effect waves-light btn" onClick={refreshPage}>
+        <a class="waves-effect waves-light btn red" onClick={refreshPage}>
           Refresh
         </a>
       </div>
