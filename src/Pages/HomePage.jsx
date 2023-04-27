@@ -77,6 +77,29 @@ function HomePage() {
           );
         })}
       </div>
+      <div className="page-button-container">
+        <a
+          class="waves-effect waves-light btn red"
+          onClick={() => {
+            if (page === 1) {
+            } else {
+              setPage(page - 1);
+              window.scrollTo(0,0);
+            }
+          }}
+        >
+          Previous
+        </a>
+        <a
+          class="waves-effect waves-light btn red"
+          onClick={() => {
+            setPage(page + 1);
+           window.scrollTo(0,0);
+          }}
+        >
+          Next
+        </a>
+      </div>
     </div>
   );
 }

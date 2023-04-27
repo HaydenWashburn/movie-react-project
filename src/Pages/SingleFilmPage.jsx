@@ -41,7 +41,7 @@ function SingleFilmPage() {
           removeMovie(item.id);
         }}
       >
-        Remove From Favorites
+        Remove From Watch List
       </button>
     ) : (
       <button
@@ -50,7 +50,7 @@ function SingleFilmPage() {
           addMovie(item);
         }}
       >
-        Save To Favorites
+        Save To Watch List
       </button>
     );
 
@@ -66,10 +66,10 @@ function SingleFilmPage() {
         <p className="overview-container section">{item.overview}</p>
         <p>Release Date: {item.release_date}</p>
         <ActionButton />
-        <h3>Reviews:</h3>
+        {/* <h3>Reviews:</h3>
         {item.results.map((review)=>{return(
           <p>{review.content}</p>
-        )})}
+        )})} */}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@
 
 
 ## Description of App
-- This App has a very simple purpose which is to provide a list of movies for the user. The user will be able to scroll through a general list of all movies, a list of Trending movies, and a list of suggested movies that is randomly generated each time the page is refreshed. The user can also create their own profile and save movies to a favorites/must watch list.
+- This App has a very simple purpose which is to provide a list of movies for the user. The user will be able to scroll through a general list of all movies, a list of Trending movies, and a list of suggested movies that is randomly generated each time the page is refreshed. The user can also create their own profile and save movies to a watch list.
 
 ## Screenshot of App
 ![screenshot of App](FinalProjectGif.gif)
