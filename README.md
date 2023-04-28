@@ -14,7 +14,7 @@
 
 ## Functionality of the App
 - When the user first gets into the website they will start at the home page.
-- Initially they will not be signed in unless they have already signed in. To sign in they would need to go to the profile tab and click the login button.
+- Initially they will not be signed in unless they have already signed in. To sign in they would need to go to the profile tab and click the    login button.
 - Once a profile is made the user can click through all the movie options whether its on the home, trending, or suggested page. 
 - Once the user clicks on the movie poster of the movie it will redirect to another page which holds the overview of the movie as well as the release date.
 - In that  same page the user will have the option to add the movie to their watch list or remove the movie once its added.

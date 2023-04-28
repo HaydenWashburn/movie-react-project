@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useSavedMovies from "../utils/LocalStorageFunction";
+import { useAuth0 } from "@auth0/auth0-react";
+import LoginButton from "../Components/login";
 
 function SingleFilmPage() {
   let [item, setItem] = useState({});
   let { id } = useParams();
-  let { movieList, addMovie, removeMovie } = useSavedMovies();
+  let { user, isAuthenticated } = useAuth0();
+  let { movieList, addMovie, removeMovie } = useSavedMovies(isAuthenticated && user.email);
 
   function getMovie() {
     Promise.all([
@@ -33,18 +36,21 @@ function SingleFilmPage() {
   let isFavorite = movieList.find((movie) => {
     return movie.id == id;
   });
-  let ActionButton = () =>
-    isFavorite ? (
-      <button
-        class="waves-effect waves-light btn red"
-        onClick={() => {
-          removeMovie(item.id);
-        }}
-      >
-        Remove From Watch List
-      </button>
-    ) : (
-      <button
+  let ActionButton = () =>{
+    if(isAuthenticated){
+      if(isFavorite){
+        return(
+          <button
+          class="waves-effect waves-light btn red"
+          onClick={() => {
+            removeMovie(item.id);
+          }}
+        >
+          Remove From Watch List
+        </button>
+        )
+      }else{
+       return( <button
         class="waves-effect waves-light btn red"
         onClick={() => {
           addMovie(item);
@@ -52,7 +58,12 @@ function SingleFilmPage() {
       >
         Save To Watch List
       </button>
-    );
+     ) }
+    }else{
+      return <LoginButton />
+    }
+  }
+
 
   return (
     <div className="singleFilm-container row">

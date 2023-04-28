@@ -4,9 +4,11 @@ import Profile from "../Components/profile";
 import LogoutButton from "../Components/logout";
 import LoginButton from "../Components/login";
 import useSavedMovies from "../utils/LocalStorageFunction";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function ProfilePage() {
-  let { movieList } = useSavedMovies();
+  let { user, isAuthenticated } = useAuth0()
+  let { movieList } = useSavedMovies(isAuthenticated && user.email);
   return (
     <div>
       <div className="page-button-container">
