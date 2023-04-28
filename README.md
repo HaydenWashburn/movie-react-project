@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - Description
+-Functionality of App
 - Screenshot of App
 - Challenges Faced
 - Things I Learned
@@ -10,6 +11,15 @@
 
 ## Description of App
 - This App has a very simple purpose which is to provide a list of movies for the user. The user will be able to scroll through a general list of all movies, a list of Trending movies, and a list of suggested movies that is randomly generated each time the page is refreshed. The user can also create their own profile and save movies to a watch list.
+
+## Functionality of the App
+-When the user first gets into the website they will start at the home page.
+-Initially they will not be signed in unless they have already signed in. To sign in they would need to go to the profile tab and click the login button.
+-Once a profile is made the user can click through all the movie options whether its on the home, trending, or suggested page. 
+-Once the user clicks on the movie poster of the movie it will redirect to another page which holds the overview of the movie as well as the release date.
+-In that  same page the user will have the option to add the movie to their watch list or remove the movie once its added.
+-Movies that are added to the watch list are available to see in the profile page.
+
 
 ## Screenshot of App
 ![screenshot of App](FinalProjectGif.gif)
