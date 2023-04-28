@@ -50,7 +50,7 @@ I kept it simple and used basic display:grid to set up columns and rows and then
 - I learned how to include pagination
 
 ## Links
-
+[Walkthrough Video](https://vimeo.com/822058352?share=copy)
 
 
 
