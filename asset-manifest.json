@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HaydenWashburn.github.io/movie-react-app/static/css/main.f0ac5c6d.css",
+    "main.js": "/HaydenWashburn.github.io/movie-react-app/static/js/main.8d944a71.js",
+    "static/js/787.652293f8.chunk.js": "/HaydenWashburn.github.io/movie-react-app/static/js/787.652293f8.chunk.js",
+    "index.html": "/HaydenWashburn.github.io/movie-react-app/index.html",
+    "main.f0ac5c6d.css.map": "/HaydenWashburn.github.io/movie-react-app/static/css/main.f0ac5c6d.css.map",
+    "main.8d944a71.js.map": "/HaydenWashburn.github.io/movie-react-app/static/js/main.8d944a71.js.map",
+    "787.652293f8.chunk.js.map": "/HaydenWashburn.github.io/movie-react-app/static/js/787.652293f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0ac5c6d.css",
+    "static/js/main.8d944a71.js"
+  ]
+}
