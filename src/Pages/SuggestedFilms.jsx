@@ -43,9 +43,9 @@ function SuggestedFilms() {
   return (
     <div>
       <div className="page-button-container">
-        <a class="waves-effect waves-light btn red" onClick={refreshPage}>
+        <Link class="waves-effect waves-light btn red" onClick={refreshPage}>
           Refresh
-        </a>
+        </Link>
       </div>
       <div className="movie-container">
         {suggestedList.map((movie) => {
