@@ -6,13 +6,14 @@ import SuggestedFilms from "./Pages/SuggestedFilms";
 import SingleFilmPage from "./Pages/SingleFilmPage";
 import NavBar from "./Components/NavBar";
 import ProfilePage from "./Pages/ProfilePage";
+
 function App() {
   return (
     <div className="layout">
+      <BrowserRouter>
       <header>
         <NavBar />
       </header>
-      <BrowserRouter>
  <Routes>
       <Route path = "/" element = {<HomePage />} />
       <Route path = "/trending" element = {<GetTrending />} />
@@ -24,5 +25,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
+

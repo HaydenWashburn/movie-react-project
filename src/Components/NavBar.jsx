@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 
 function NavBar() {
   return (
@@ -8,16 +10,16 @@ function NavBar() {
             <h6 className="brand-logo center">ReactFlix</h6>
             <ul className="#f44336 red left hide-on-med-and-down">
               <li>
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/trending">Trending</a>
+                <Link to="/trending">Trending</Link>
               </li>
               <li>
-                <a href="/suggested">Suggested</a>
+                <Link to="/suggested">Suggested</Link>
               </li>
               <li>
-                <a href="/profile">Profile</a>
+                <Link to="/profile">Profile</Link>
               </li>
             </ul>
           </div>
